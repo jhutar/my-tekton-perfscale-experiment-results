@@ -1,0 +1,88 @@
+{
+    "ended": null,
+    "id": "2022-11-16T08_53_47_334592860",
+    "measurements": {},
+    "name": "perfscale-demo-app API perf test",
+    "owner": null,
+    "parameters": {
+        "locust": {
+            "hatch_rate": 10,
+            "host": "http://perfscale-demo-service:80",
+            "num_clients": 1,
+            "reset_stats": false,
+            "runner": "local",
+            "stop_timeout": 10
+        },
+        "start": "2022-11-16T08:52:47.440212+00:00",
+        "test": {
+            "duration": 5,
+            "requests": 0,
+            "url_suffix": "/api/rbac/v1"
+        }
+    },
+    "result": null,
+    "results": {
+        "end": "2022-11-16T08:52:53.796423+00:00",
+        "errors": [],
+        "requests": {
+            "GET_api_users_42": {
+                "50percentile": 100,
+                "90percentile": 100,
+                "95percentile": 100,
+                "99percentile": 100,
+                "avg_content_length": 182.0,
+                "avg_response_time": 99.88607990089804,
+                "fail_ratio": 0.0,
+                "max_response_time": 99.88607990089804,
+                "median_response_time": 99.88607990089804,
+                "min_response_time": 99.88607990089804,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 1,
+                "total_rps": 0.15735263365732222
+            },
+            "GET_api_users_search_by_address_text_Brno": {
+                "50percentile": 2000.0,
+                "90percentile": 2000.0,
+                "95percentile": 2000.0,
+                "99percentile": 2000.0,
+                "avg_content_length": 3853.0,
+                "avg_response_time": 2003.6238000029698,
+                "fail_ratio": 0.0,
+                "max_response_time": 2003.6238000029698,
+                "median_response_time": 2003.6238000029698,
+                "min_response_time": 2003.6238000029698,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 1,
+                "total_rps": 0.15735263365732222
+            },
+            "GET_api_users_search_by_email_text_pavla": {
+                "50percentile": 1700.0,
+                "90percentile": 1900.0,
+                "95percentile": 1900.0,
+                "99percentile": 1900.0,
+                "avg_content_length": 4035.0,
+                "avg_response_time": 1416.5654100555305,
+                "fail_ratio": 0.0,
+                "max_response_time": 1884.1117430711165,
+                "median_response_time": 1700.0,
+                "min_response_time": 663.1859301123768,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 3,
+                "total_rps": 0.47205790097196665
+            },
+            "SUMMARY": {
+                "avg_content_length": 3228.0,
+                "fail_ratio": 0.0,
+                "median_response_time": 1440.7019759807736,
+                "num_failures": 0,
+                "num_requests": 5,
+                "total_content_length": 16140,
+                "total_rps": 0.7867631682866111
+            }
+        }
+    },
+    "started": "2022-11-16T08:52:47.439977+00:00"
+}
