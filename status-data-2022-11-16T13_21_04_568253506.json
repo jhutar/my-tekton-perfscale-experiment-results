@@ -20,7 +20,7 @@
             "url_suffix": "/api/rbac/v1"
         }
     },
-    "result": null,
+    "result": "PASS",
     "results": {
         "end": "2022-11-16T13:39:04.697126+00:00",
         "errors": [],
