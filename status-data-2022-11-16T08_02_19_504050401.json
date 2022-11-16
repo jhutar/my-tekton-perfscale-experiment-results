@@ -1,0 +1,120 @@
+{
+    "ended": null,
+    "id": "2022-11-16T08_02_19_504050401",
+    "measurements": {},
+    "name": "perfscale-demo-app API perf test",
+    "owner": null,
+    "parameters": {
+        "locust": {
+            "hatch_rate": 10,
+            "host": "http://perfscale-demo-service:80",
+            "num_clients": 1,
+            "reset_stats": false,
+            "runner": "local",
+            "stop_timeout": 10
+        },
+        "start": "2022-11-16T08:02:08.796320+00:00",
+        "test": {
+            "duration": 5,
+            "requests": 0,
+            "url_suffix": "/api/rbac/v1"
+        }
+    },
+    "result": null,
+    "results": {
+        "end": "2022-11-16T08:02:14.191246+00:00",
+        "errors": [],
+        "requests": {
+            "GET_": {
+                "50percentile": 7,
+                "90percentile": 7,
+                "95percentile": 7,
+                "99percentile": 7,
+                "avg_content_length": 11.0,
+                "avg_response_time": 6.869717501103878,
+                "fail_ratio": 0.0,
+                "max_response_time": 7.25042202975601,
+                "median_response_time": 6.4890129724517465,
+                "min_response_time": 6.4890129724517465,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 2,
+                "total_rps": 0.3707848218202633
+            },
+            "GET_api_users_42": {
+                "50percentile": 8,
+                "90percentile": 8,
+                "95percentile": 8,
+                "99percentile": 8,
+                "avg_content_length": 182.0,
+                "avg_response_time": 7.20427354099229,
+                "fail_ratio": 0.0,
+                "max_response_time": 7.500101113691926,
+                "median_response_time": 7,
+                "min_response_time": 6.908445968292654,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 2,
+                "total_rps": 0.3707848218202633
+            },
+            "GET_api_users_search_by_address_text_Brno": {
+                "50percentile": 1700.0,
+                "90percentile": 1700.0,
+                "95percentile": 1700.0,
+                "99percentile": 1700.0,
+                "avg_content_length": 3853.0,
+                "avg_response_time": 1592.9845909704454,
+                "fail_ratio": 0.0,
+                "max_response_time": 1681.2279579462484,
+                "median_response_time": 1504.7412239946425,
+                "min_response_time": 1504.7412239946425,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 2,
+                "total_rps": 0.3707848218202633
+            },
+            "GET_api_users_search_by_email_text_pavla": {
+                "50percentile": 580.0,
+                "90percentile": 580.0,
+                "95percentile": 580.0,
+                "99percentile": 580.0,
+                "avg_content_length": 4035.0,
+                "avg_response_time": 584.2233160510659,
+                "fail_ratio": 0.0,
+                "max_response_time": 584.2233160510659,
+                "median_response_time": 584.2233160510659,
+                "min_response_time": 584.2233160510659,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 1,
+                "total_rps": 0.18539241091013164
+            },
+            "GET_api_users_search_by_name_text_Petr": {
+                "50percentile": 1600.0,
+                "90percentile": 1600.0,
+                "95percentile": 1600.0,
+                "99percentile": 1600.0,
+                "avg_content_length": 4013.0,
+                "avg_response_time": 1593.7792400363833,
+                "fail_ratio": 0.0,
+                "max_response_time": 1593.7792400363833,
+                "median_response_time": 1593.7792400363833,
+                "min_response_time": 1593.7792400363833,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 1,
+                "total_rps": 0.18539241091013164
+            },
+            "SUMMARY": {
+                "avg_content_length": 2017.5,
+                "fail_ratio": 0.0,
+                "median_response_time": 651.8078787527047,
+                "num_failures": 0,
+                "num_requests": 8,
+                "total_content_length": 16140,
+                "total_rps": 1.4831392872810534
+            }
+        }
+    },
+    "started": "2022-11-16T08:02:08.796087+00:00"
+}
