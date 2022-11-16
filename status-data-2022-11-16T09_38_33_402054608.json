@@ -1,0 +1,181 @@
+{
+    "ended": null,
+    "id": "2022-11-16T09_38_33_402054608",
+    "measurements": {},
+    "name": "perfscale-demo-app API perf test",
+    "owner": null,
+    "parameters": {
+        "locust": {
+            "hatch_rate": 10,
+            "host": "http://perfscale-demo-service:80",
+            "num_clients": 10,
+            "reset_stats": false,
+            "runner": "local",
+            "stop_timeout": 10
+        },
+        "start": "2022-11-16T09:38:58.148414+00:00",
+        "test": {
+            "duration": 10,
+            "requests": 0,
+            "url_suffix": "/api/rbac/v1"
+        }
+    },
+    "result": null,
+    "results": {
+        "end": "2022-11-16T09:39:08.384675+00:00",
+        "errors": [
+            {
+                "error": "HTTPError('404 Client Error: NOT FOUND for url: http://perfscale-demo-service:80/api/moves/24')",
+                "method": "GET",
+                "name": "/api/moves/24",
+                "occurrences": 91
+            },
+            {
+                "error": "HTTPError('404 Client Error: NOT FOUND for url: http://perfscale-demo-service:80/api/users/42')",
+                "method": "GET",
+                "name": "/api/users/42",
+                "occurrences": 86
+            }
+        ],
+        "requests": {
+            "GET_": {
+                "50percentile": 98,
+                "90percentile": 300.0,
+                "95percentile": 300.0,
+                "99percentile": 430.0,
+                "avg_content_length": 11.0,
+                "avg_response_time": 136.9877037918195,
+                "fail_ratio": 0.0,
+                "max_response_time": 425.5238549085334,
+                "median_response_time": 98,
+                "min_response_time": 16.18193998001516,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 75,
+                "total_rps": 7.327231034293847
+            },
+            "GET_api_moves": {
+                "50percentile": 99,
+                "90percentile": 290.0,
+                "95percentile": 310.0,
+                "99percentile": 580.0,
+                "avg_content_length": 56.0,
+                "avg_response_time": 140.6841821281421,
+                "fail_ratio": 0.0,
+                "max_response_time": 581.2430810183287,
+                "median_response_time": 98,
+                "min_response_time": 15.284230932593346,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 82,
+                "total_rps": 8.01110593082794
+            },
+            "GET_api_moves_24": {
+                "50percentile": 99,
+                "90percentile": 310.0,
+                "95percentile": 370.0,
+                "99percentile": 500.0,
+                "avg_content_length": 232.0,
+                "avg_response_time": 160.97080599833893,
+                "fail_ratio": 1.0,
+                "max_response_time": 504.7399860341102,
+                "median_response_time": 99,
+                "min_response_time": 19.003924098797143,
+                "num_failures": 91,
+                "num_none_requests": 0,
+                "num_requests": 91,
+                "total_rps": 8.890373654943202
+            },
+            "GET_api_users": {
+                "50percentile": 100.0,
+                "90percentile": 310.0,
+                "95percentile": 390.0,
+                "99percentile": 580.0,
+                "avg_content_length": 56.0,
+                "avg_response_time": 165.50820006876054,
+                "fail_ratio": 0.0,
+                "max_response_time": 576.4522650279105,
+                "median_response_time": 100.0,
+                "min_response_time": 18.365809926763177,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 66,
+                "total_rps": 6.447963310178586
+            },
+            "GET_api_users_42": {
+                "50percentile": 100.0,
+                "90percentile": 290.0,
+                "95percentile": 300.0,
+                "99percentile": 380.0,
+                "avg_content_length": 232.0,
+                "avg_response_time": 146.05193659473687,
+                "fail_ratio": 1.0,
+                "max_response_time": 382.37191608641297,
+                "median_response_time": 100.0,
+                "min_response_time": 17.61983905453235,
+                "num_failures": 86,
+                "num_none_requests": 0,
+                "num_requests": 86,
+                "total_rps": 8.401891585990278
+            },
+            "GET_api_users_search_by_address_text_Brno": {
+                "50percentile": 98,
+                "90percentile": 300.0,
+                "95percentile": 380.0,
+                "99percentile": 500.0,
+                "avg_content_length": 56.0,
+                "avg_response_time": 145.07182554953033,
+                "fail_ratio": 0.0,
+                "max_response_time": 499.23723202664405,
+                "median_response_time": 98,
+                "min_response_time": 20.667114993557334,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 80,
+                "total_rps": 7.815713103246771
+            },
+            "GET_api_users_search_by_email_text_pavla": {
+                "50percentile": 110.0,
+                "90percentile": 300.0,
+                "95percentile": 380.0,
+                "99percentile": 500.0,
+                "avg_content_length": 56.0,
+                "avg_response_time": 169.17292090127825,
+                "fail_ratio": 0.0,
+                "max_response_time": 504.75187704432756,
+                "median_response_time": 110.0,
+                "min_response_time": 12.649776064790785,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 93,
+                "total_rps": 9.08576648252437
+            },
+            "GET_api_users_search_by_name_text_Petr": {
+                "50percentile": 130.0,
+                "90percentile": 300.0,
+                "95percentile": 310.0,
+                "99percentile": 510.0,
+                "avg_content_length": 56.0,
+                "avg_response_time": 175.76821125259835,
+                "fail_ratio": 0.0,
+                "max_response_time": 508.16463492810726,
+                "median_response_time": 130.0,
+                "min_response_time": 14.405500958673656,
+                "num_failures": 0,
+                "num_none_requests": 0,
+                "num_requests": 79,
+                "total_rps": 7.718016689456186
+            },
+            "SUMMARY": {
+                "avg_content_length": 98.60276073619632,
+                "fail_ratio": 0.2714723926380368,
+                "median_response_time": 104.19478527607362,
+                "num_failures": 177,
+                "num_requests": 652,
+                "total_content_length": 64289,
+                "total_rps": 63.69806179146118
+            }
+        }
+    },
+    "started": "2022-11-16T09:38:58.148179+00:00"
+}
