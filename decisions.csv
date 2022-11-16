@@ -1,6 +1,6 @@
 description,result,method,value,lower_boundary,upper_boundary,deviation,job_name,build_url,uploaded
-results.requests.SUMMARY.total_rps,FAIL,check_by_min_max_0_1,1.2378146159564514,1.3691494441204486,1.7459113048773918,0.3485884370040417,,,2022-11-16T15:27:10.422608
-results.requests.SUMMARY.median_response_time,FAIL,check_by_min_max_0_1,7936.2962962962965,5443.333333333333,7002.027027027027,0.5993924739987224,,,2022-11-16T15:27:10.422613
-results.requests.SUMMARY.fail_ratio,PASS,check_by_min_max_0_1,0.0,0.0,0.0,,,,2022-11-16T15:27:10.422615
-results.requests.SUMMARY.num_failures,PASS,check_by_min_max_0_1,0,0.0,0.0,,,,2022-11-16T15:27:10.422616
-results.requests.SUMMARY.num_requests,FAIL,check_by_min_max_0_1,135,148.0,185.0,0.35135135135135137,,,2022-11-16T15:27:10.422617
+results.requests.SUMMARY.total_rps,PASS,check_by_min_max_0_1,1.6660508920665014,1.2378146159564514,1.7459113048773918,,,,2022-11-16T21:44:53.901289
+results.requests.SUMMARY.median_response_time,PASS,check_by_min_max_0_1,5592.982456140351,5443.333333333333,7936.2962962962965,,,,2022-11-16T21:44:53.901297
+results.requests.SUMMARY.fail_ratio,PASS,check_by_min_max_0_1,0.0,0.0,0.0,,,,2022-11-16T21:44:53.901300
+results.requests.SUMMARY.num_failures,PASS,check_by_min_max_0_1,0,0.0,0.0,,,,2022-11-16T21:44:53.901303
+results.requests.SUMMARY.num_requests,PASS,check_by_min_max_0_1,171,135.0,185.0,,,,2022-11-16T21:44:53.901305
